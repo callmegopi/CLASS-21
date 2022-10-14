@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The translate() Method</h1>
+    <p>The translate() method moves an element from its current position:</p>
+
+    <button onclick="transitionsWidth()">transitioin width 2sec</button>
+    <div id="myDiv">
+        This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+    </div>
+
+    <script>
+        function transitionsWidth() {
+            var myDiv = document.getElementById("myDiv")
+            myDiv.style.transition="width 2s, height 3s"
+            myDiv.style.width= "600px"
+            myDiv.style.height= "300px"
+        }
+    </script>
+</body>
+
+</html>
